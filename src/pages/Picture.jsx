@@ -16,7 +16,7 @@ const Home = () => {
     let camera = null;
     if(videoRef.current) {
         camera = new CameraPhoto(videoRef.current);
-        camera.startCamera(FACING_MODES.USER);
+        camera.startCamera(FACING_MODES.ENVIRONMENT);
         
         setCamera(camera);
     }
